@@ -1,4 +1,6 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+project(rubiks_cube_solver)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
 
 ADD_EXECUTABLE(run
     src/main.cpp
