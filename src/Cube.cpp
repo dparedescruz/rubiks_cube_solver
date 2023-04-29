@@ -57,4 +57,61 @@ Cube::Cube() {
     }
 
     cout << endl;
+
+    front = 'r';
+    left = 'b';
+    right = 'g';
+    back = 'o';
+    up = 'y';
+    down = 'w';
+
+
+}
+
+char Cube::getFront(){
+    return front;
+}
+
+char Cube::getLeft(){
+    return left;
+}
+
+char Cube::getRight(){
+    return right;
+}
+
+char Cube::getBack(){
+    return back;
+}
+
+char Cube::getUp(){
+    return up;
+}
+
+char Cube::getDown(){
+    return down;
+}
+
+void Cube::setFront(char f){
+    front = f;
+}
+
+void Cube::setLeft(char l){
+    left = l;
+}
+
+void Cube::setRight(char r){
+    right = r;
+}
+
+void Cube::setBack(char b){
+    back = b;
+}
+
+void Cube::setUp(char u){
+    up = u;
+}
+
+void Cube::setDown(char d){
+    down = d;
 }
