@@ -38,6 +38,38 @@ int main() {
     example2.rotateRight();
     example2.display();
 
+    cout << "\nTop Layer ClockWise\n" << endl;
+
+    example2.topClockWise();
+    example2.display();
+
+    cout << endl;
+
+    example2.displayFace('b');
+    cout << endl;
+    example2.displayFace('r');
+    cout << endl;
+    example2.displayFace('g');
+    cout << endl;
+    example2.displayFace('o');
+
+    cout << endl;
+
+    cout << "\nTop Layer Counter ClockWise\n" << endl;
+
+    example2.topCounterClockWise();
+    example2.display();
+
+    cout << endl;
+
+    example2.displayFace('b');
+    cout << endl;
+    example2.displayFace('r');
+    cout << endl;
+    example2.displayFace('g');
+    cout << endl;
+    example2.displayFace('o');
+    
     
 
 
