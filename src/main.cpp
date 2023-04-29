@@ -1,5 +1,5 @@
 #include <iostream>
-#include "header/Cube.h"
+#include "../header/Cube.h"
 
 using namespace std;
   
