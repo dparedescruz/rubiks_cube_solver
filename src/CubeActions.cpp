@@ -13,15 +13,27 @@ void CubeActions::rotateUp(){
 }
 
 void CubeActions::rotateDown(){
-    
+    char temp = getDown();
+    setDown(getFront());
+    setFront(getUp());
+    setUp(getBack());
+    setBack(temp);
 }
 
 void CubeActions::rotateLeft(){
-    
+    char temp = getFront();
+    setFront(getRight());
+    setRight(getBack());
+    setBack(getLeft());
+    setLeft(temp);
 }
 
 void CubeActions::rotateRight(){
-    
+    char temp = getFront();
+    setFront(getLeft());
+    setLeft(getBack());
+    setBack(getRight());
+    setRight(temp);
 }
 
 void CubeActions::display(){

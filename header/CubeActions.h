@@ -12,6 +12,12 @@ class CubeActions : Cube{
         void rotateDown();
         void rotateLeft();
         void rotateRight();
+        void topClockWise();
+        void topCounterClockWise();
+        void middleClockWise();
+        void middleCounterClockWise();
+        void bottomClockWise();
+        void bottomCounterClockWise();
         void display();
 };
 

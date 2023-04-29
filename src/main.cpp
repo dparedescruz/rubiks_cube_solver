@@ -19,8 +19,23 @@ int main() {
 
     example2.rotateUp();
 
-    cout << endl;
+    cout << "\nrotate up\n" << endl;
 
+    example2.display();
+
+    cout << "\nrotate down\n" << endl;
+
+    example2.rotateDown();
+    example2.display();
+
+    cout << "\nrotate left\n" << endl;
+
+    example2.rotateLeft();
+    example2.display();
+
+    cout << "\nrotate right\n" << endl;
+
+    example2.rotateRight();
     example2.display();
 
     
