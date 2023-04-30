@@ -75,19 +75,79 @@ void CubeActions::upCounterClockWise(){
 }
 
 void CubeActions::downClockWise(){
-    
+    char temp[3];
+    for(int i = 0; i < 3; i++){
+        temp[i] = red[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        red[2][i] = blue[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        blue[2][i] = orange[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        orange[2][i] = green[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        green[2][i] = temp[i];
+    }
 }
 
 void CubeActions::downCounterClockWise(){
-
+    char temp[3];
+    for(int i = 0; i < 3; i++){
+        temp[i] = red[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        red[2][i] = green[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        green[2][i] = orange[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        orange[2][i] = blue[2][i];
+    }
+    for(int i = 0; i < 3; i++){
+        blue[2][i] = temp[i];
+    }
 }
 
 void CubeActions::leftClockWise(){
-
+    char temp[3];
+    for(int i = 0; i < 3; i++){
+        temp[i] = red[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        red[i][0] = yellow[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        yellow[i][0] = orange[i][2];
+    }
+    for(int i = 0; i < 3; i++){
+        orange[i][2] = white[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        white[i][0] = temp[0];
+    }
 }
 
 void CubeActions::leftCounterClockWise(){
-
+    char temp[3];
+    for(int i = 0; i < 3; i++){
+        temp[i] = red[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        red[i][0] = white[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        white[i][0] = orange[i][2];
+    }
+    for(int i = 0; i < 3; i++){
+        orange[i][2] = yellow[i][0];
+    }
+    for(int i = 0; i < 3; i++){
+        yellow[i][0] = temp[0];
+    }
 }
 
 void CubeActions::rightClockWise(){
