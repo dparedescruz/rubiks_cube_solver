@@ -36,7 +36,7 @@ void CubeActions::rotateRight(){
     setRight(temp);
 }
 
-void CubeActions::topClockWise(){
+void CubeActions::upClockWise(){
     char temp[3];
     for(int i = 0; i < 3; i++){
         temp[i] = red[0][i];
@@ -55,7 +55,7 @@ void CubeActions::topClockWise(){
     }
 }
 
-void CubeActions::topCounterClockWise(){
+void CubeActions::upCounterClockWise(){
     char temp[3];
     for(int i = 0; i < 3; i++){
         temp[i] = red[0][i];
@@ -72,6 +72,49 @@ void CubeActions::topCounterClockWise(){
     for(int i = 0; i < 3; i++){
         green[0][i] = temp[i];
     }
+}
+
+void CubeActions::downClockWise(){
+    char temp[3];
+    for(int i = 0; i < 3; i++){
+        temp[i] = red[2][i];
+    }
+}
+
+void CubeActions::downCounterClockWise(){
+
+}
+
+void CubeActions::leftClockWise(){
+
+}
+
+void CubeActions::leftCounterClockWise(){
+
+}
+
+void CubeActions::rightClockWise(){
+
+}
+
+void CubeActions::rightCounterClockWise(){
+    
+}
+
+void CubeActions::frontClockWise(){
+
+}
+
+void CubeActions::frontCounterClockWise(){
+
+}
+
+void CubeActions::backClockWise(){
+
+}
+
+void CubeActions::backCounterClockWise(){
+
 }
 
 void CubeActions::display(){

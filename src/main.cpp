@@ -40,7 +40,7 @@ int main() {
 
     cout << "\nTop Layer ClockWise\n" << endl;
 
-    example2.topClockWise();
+    example2.upClockWise();
     example2.display();
 
     cout << endl;
@@ -57,7 +57,7 @@ int main() {
 
     cout << "\nTop Layer Counter ClockWise\n" << endl;
 
-    example2.topCounterClockWise();
+    example2.upCounterClockWise();
     example2.display();
 
     cout << endl;
