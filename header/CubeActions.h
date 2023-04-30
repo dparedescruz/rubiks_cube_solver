@@ -8,6 +8,7 @@ class CubeActions : Cube{
     private:
 
     public:
+        void flipArray(char arr[3]);
         void rotateUp();
         void rotateDown();
         void rotateLeft();
@@ -24,7 +25,6 @@ class CubeActions : Cube{
         void frontCounterClockWise();
         void backClockWise();
         void backCounterClockWise();
-        void rotateFace(char face[3][3]);
         void display();
         void displayFace(char face);
         void displayCube();
