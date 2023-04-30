@@ -26,6 +26,7 @@ class CubeActions : Cube{
         void backCounterClockWise();
         void display();
         void displayFace(char face);
+        void displayCube();
 };
 
 #endif

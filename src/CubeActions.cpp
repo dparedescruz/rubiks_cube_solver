@@ -194,16 +194,16 @@ void CubeActions::frontClockWise(){
         temp[i] = white[0][i];
     }
     for(int i = 0; i < 3; i++){
-        white[0][i] = green[0][i];
+        white[0][i] = green[i][0];
     }
     for(int i = 0; i < 3; i++){
-        green[0][i] = yellow[0][i];
+        green[i][0] = yellow[2][i];
     }
     for(int i = 0; i < 3; i++){
-        yellow[0][i] = blue[0][i];
+        yellow[2][i] = blue[i][2];
     }
     for(int i = 0; i < 3; i++){
-        blue[0][i] = temp[i];
+        blue[i][2] = temp[i];
     }
 }
 
@@ -213,16 +213,16 @@ void CubeActions::frontCounterClockWise(){
         temp[i] = white[0][i];
     }
     for(int i = 0; i < 3; i++){
-        white[0][i] = blue[0][i];
+        white[0][i] = blue[i][2];
     }
     for(int i = 0; i < 3; i++){
-        blue[0][i] = yellow[0][i];
+        blue[i][2] = yellow[2][i];
     }
     for(int i = 0; i < 3; i++){
-        yellow[0][i] = green[0][i];
+        yellow[2][i] = green[i][0];
     }
     for(int i = 0; i < 3; i++){
-        green[0][i] = temp[i];
+        green[i][0] = temp[i];
     }
 }
 
@@ -232,16 +232,16 @@ void CubeActions::backClockWise(){
         temp[i] = white[2][i];
     }
     for(int i = 0; i < 3; i++){
-        white[2][i] = blue[2][i];
+        white[2][i] = blue[i][0];
     }
     for(int i = 0; i < 3; i++){
-        blue[2][i] = yellow[2][i];
+        blue[i][0] = yellow[0][i];
     }
     for(int i = 0; i < 3; i++){
-        yellow[2][i] = green[2][i];
+        yellow[0][i] = green[i][2];
     }
     for(int i = 0; i < 3; i++){
-        green[2][i] = temp[i];
+        green[i][2] = temp[i];
     }
 }
 
@@ -251,16 +251,16 @@ void CubeActions::backCounterClockWise(){
         temp[i] = white[2][i];
     }
     for(int i = 0; i < 3; i++){
-        white[2][i] = green[2][i];
+        white[2][i] = green[i][2];
     }
     for(int i = 0; i < 3; i++){
-        green[2][i] = yellow[2][i];
+        green[i][2] = yellow[0][i];
     }
     for(int i = 0; i < 3; i++){
-        yellow[2][i] = blue[2][i];
+        yellow[0][i] = blue[i][0];
     }
     for(int i = 0; i < 3; i++){
-        blue[2][i] = temp[i];
+        blue[i][0] = temp[i];
     }
 }
 
@@ -323,5 +323,37 @@ void CubeActions::displayFace(char face){
                 cout << endl;
             }
             break;
+    }
+}
+
+void CubeActions::displayCube(){
+    for(int i = 0; i < 3; i++){
+        cout << "      ";
+        for(int j = 0; j < 3; j++){
+            cout << yellow[i][j] << " ";
+        }
+        cout << endl;
+    }
+    for(int i = 0; i < 3; i++){
+        for(int j = 0; j < 3; j++){
+            cout << blue[i][j] << " ";
+        }
+        for(int j = 0; j < 3; j++){
+            cout << red[i][j] << " ";
+        }
+        for(int j = 0; j < 3; j++){
+            cout << green[i][j] << " ";
+        }
+        for(int j = 0; j < 3; j++){
+            cout << orange[i][j] << " ";
+        }
+        cout << endl;
+    }
+    for(int i = 0; i < 3; i++){
+        cout << "      ";
+        for(int j = 0; j < 3; j++){
+            cout << white[i][j] << " ";
+        }
+        cout << endl;
     }
 }
