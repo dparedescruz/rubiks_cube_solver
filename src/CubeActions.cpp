@@ -264,6 +264,10 @@ void CubeActions::backCounterClockWise(){
     }
 }
 
+void CubeActions::rotateFace(char face[3][3]){
+    
+}
+
 void CubeActions::display(){
     cout << "front: " << getFront() << endl;
     cout << "left: " << getLeft() << endl;
